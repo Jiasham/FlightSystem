@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+.status-confirm {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Button style */
+.back-btn {
+    background-color:  rgb(247, 216, 125);
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-btn:hover {
+    background-color:  rgb(246, 218, 134);
+}
+
+/* Flight Ticket Section */
+.flight-ticket, .hotel-booking {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight-ticket h2, .hotel-booking h2 {
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.ticket {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    background:  rgb(247, 216, 125);
+    color: #fff;
+    padding: 15px;
+}
+
+.ticket-header h3, .ticket-header p {
+    margin: 0;
+}
+
+.ticket-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f3f3f3;
+}
+
+.hotel-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.hotel-header {
+    margin-bottom: 15px;
+}
+
+.hotel-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hotel-details div {
+    flex: 1;
+}
+
+.amenities {
+    font-size: 0.9rem;
+    color: #27ae60;
+}
+
+.price {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 15px 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 30px;
+    font: "Poppins", sans-serif;
+  }
+@media (max-width: 768px) {
+    .ticket-body, .hotel-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
